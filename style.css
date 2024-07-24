@@ -75,8 +75,8 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 60px 42px;
-background: #e0e0e0;
-border: 1px solid #bdbdbd;
+background: #18181B;
+border: 1px solid #27272A;
 margin-top: 20px;
 border-radius: 14px;
 }
@@ -96,7 +96,7 @@ gap: 20px;
 
 .about .left .info h2 {
 font-size: 36px;
-color: #000;
+color: #fff;
 font-weight: 500;
 }
 
@@ -277,8 +277,8 @@ align-items: center;
 gap: 20px;
 padding: 20px;
 margin-top: 20px;
- background: #e0e0e0;
- border: 1px solid #bdbdbd;
+background: #18181B;
+border: 1px solid #27272A;
 border-radius: 14px;
 }
 
