@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+
+<body class="light-mode">
+<nav>
+    <div class="logo">
+        <i class="fas fa-code"></i>
+    </div>
+    <div class="links">
+        <a href="#about" class="active">À propos</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <button id="toggle-theme">Mode Nuit</button>
+    </div>
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+
+<div class="about" id="about">
+    <div class="left">
+        <h3>Administrateur Réseaux et Systèmes</h3>
+        <div class="info">
+            <h2>Je suis Amadou Issaka  <strong>ILLO</strong></h2>
+            <p>Je crée des solutions réseau et des systèmes robustes.</p>
+            <div class="buttons">
+                </button>
+                <button class="email">
+                    Copier Email <i class="far fa-copy"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <img src="profile.jpg" alt="Profile Picture">
+    </div>
+</div>
+
+<div class="portfolio" id="portfolio">
+    <h3>Mes Projets</h3>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="assets/projet1.png" alt="Project 1">
+            <h4>Projet 1</h4>
+            <p>Description du projet 1.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="assets/projet2.png" alt="Project 2">
+            <h4>Projet 2</h4>
+            <p>Description du projet 2.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="assets/projet3.png" alt="Project 3">
+            <h4>Projet 3</h4>
+            <p>Description du projet 3.</p>
+        </div>
+    </div>
+</div>
+
+<div class="contact" id="contact">
+    <h3>Contactez-moi</h3>
+    <form>
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+
+<footer>
+    <a href="#">Mon Portfolio</a>
+    <div class="socials">
+        <a href="#">Github</a>
+        <a href="https://x.com/AmadouIssakail1?t=cB8OmZLlzfAinP1Xf4aRRA&s=09">Twitter</a>
+        <a href="https://www.linkedin.com/in/amadou-issaka-illo-55b1a11ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.links').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
