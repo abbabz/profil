@@ -353,23 +353,22 @@ body.dark-mode .contact form label {
 
 /* Responsive */
 @media (max-width: 768px) {
-    nav .links {
-        display: none; /* Caché par défaut */
+    nav ul {
+        display: none;
         flex-direction: column;
         gap: 10px;
-        background: rgba(24, 24, 27, 0.9);
+        background: rgba(24, 24, 27, 0.8);
         border: 1px solid #27272A;
         border-radius: 14px;
-        padding: 20px;
+        padding: 10px;
         position: absolute;
         top: 70px;
         right: 20px;
         z-index: 10;
-        width: 200px; /* Largeur du menu */
     }
 
-    nav .links.active {
-        display: flex; /* Affiché lorsque la classe active est ajoutée */
+    nav ul.active {
+        display: flex;
     }
 
     nav .links a {
