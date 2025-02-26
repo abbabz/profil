@@ -349,7 +349,7 @@ body.dark-mode .contact form label {
 
 /* Responsive */
 @media (max-width: 768px) {
-    nav ul {
+    nav .links {
         display: none;
         flex-direction: column;
         gap: 10px;
@@ -363,7 +363,7 @@ body.dark-mode .contact form label {
         z-index: 10;
     }
 
-    nav ul.active {
+    nav .links.active {
         display: flex;
     }
 
