@@ -67,6 +67,11 @@ nav a {
 nav a:hover {
     color: #ff0077;
 }
+nav .menu-toggle {
+display: none;
+font-size: 24px;
+cursor: pointer;
+}
 
 /* Conteneur 3D */
 #three-container {
