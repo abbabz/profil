@@ -68,11 +68,11 @@ nav a:hover {
     color: #ff0077;
 }
 
-.menu-toggle {
+nav .menu-toggle {
     display: none; /* Caché par défaut */
     font-size: 24px;
     cursor: pointer;
-    color: #00ffcc;
+   
 }
 
 
