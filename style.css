@@ -193,8 +193,8 @@ main {
 }
 
 .portfolio-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 colonnes en desktop, 1 en mobile */
     gap: 20px;
     justify-content: center;
 }
@@ -204,7 +204,6 @@ main {
     border: 1px solid #27272A;
     border-radius: 14px;
     padding: 20px;
-    max-width: 300px;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -229,6 +228,13 @@ main {
     font-size: 16px;
     margin-top: 5px;
     text-align: justify;
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* 1 colonne en mode mobile */
+    }
 }
 
 /* Section Contact */
