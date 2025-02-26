@@ -51,22 +51,10 @@ header h1 {
     color: #00ffcc;
 }
 
-
-nav .links {
-    display: flex; /* Affiché par défaut en mode desktop */
-    flex-direction: row; /* Alignement horizontal */
-    gap: 20px;
-    background: transparent; /* Pas de fond en mode desktop */
-    border: none; /* Pas de bordure en mode desktop */
-    border-radius: 0;
-    padding: 0;
-    position: static; /* Position normale */
-    z-index: auto;
-}
-
-
-nav .links.active {
+nav ul {
+    list-style: none;
     display: flex;
+    gap: 20px;
 }
 
 nav a {
@@ -79,13 +67,6 @@ nav a {
 nav a:hover {
     color: #ff0077;
 }
-.menu-toggle {
-    display: none; /* Caché par défaut */
-    font-size: 24px;
-    cursor: pointer;
-    color: #00ffcc;
-}
-
 
 /* Conteneur 3D */
 #three-container {
@@ -193,10 +174,10 @@ main {
 }
 
 .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    align-items: stretch; /* Uniformise la hauteur */
+    justify-content: center;
 }
 
 .portfolio-item {
@@ -204,15 +185,17 @@ main {
     border: 1px solid #27272A;
     border-radius: 14px;
     padding: 20px;
+    max-width: 300px;
     text-align: center;
     transition: transform 0.3s ease;
-    overflow: hidden;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
 }
 
 .portfolio-item img {
     width: 100%;
-    max-width: 100%;
-    height: auto;
     border-radius: 14px;
 }
 
@@ -227,17 +210,6 @@ main {
     font-size: 16px;
     margin-top: 5px;
     text-align: justify;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limite le texte à 3 lignes */
-    -webkit-box-orient: vertical;
-}
-/* Responsive pour les petits écrans */
-@media (max-width: 768px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr; /* 1 colonne en mode mobile */
-    }
 }
 
 /* Section Contact */
@@ -348,10 +320,9 @@ body.dark-mode .contact form label {
 
 /* Responsive */
 @media (max-width: 768px) {
-    /* Cacher le menu par défaut en mode mobile */
-    nav .links {
+    nav ul {
         display: none;
-        flex-direction: column; /* Alignement vertical */
+        flex-direction: column;
         gap: 10px;
         background: rgba(24, 24, 27, 0.8);
         border: 1px solid #27272A;
@@ -363,16 +334,9 @@ body.dark-mode .contact form label {
         z-index: 10;
     }
 
-    /* Afficher le menu lorsque la classe .active est ajoutée */
-    nav .links.active {
+    nav ul.active {
         display: flex;
     }
-
-    /* Afficher le bouton de bascule en mode mobile */
-    .menu-toggle {
-        display: block;
-    }
-}
 
     .about {
         flex-direction: column;
