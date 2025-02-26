@@ -67,6 +67,7 @@ nav a {
 nav a:hover {
     color: #ff0077;
 }
+
 .menu-toggle {
     display: none; /* Caché par défaut */
     font-size: 24px;
@@ -74,11 +75,7 @@ nav a:hover {
     color: #00ffcc;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Affiché sur mobile */
-    }
-}
+
 
 /* Conteneur 3D */
 #three-container {
@@ -349,7 +346,10 @@ body.dark-mode .contact form label {
     nav ul.active {
         display: flex;
     }
-
+    
+    nav .menu-toggle {
+        display: block;
+    }
     .about {
         flex-direction: column;
         align-items: center;
