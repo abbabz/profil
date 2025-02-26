@@ -51,10 +51,27 @@ header h1 {
     color: #00ffcc;
 }
 
-nav ul {
+/* nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+}*/
+nav .links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(24, 24, 27, 0.8);
+    border: 1px solid #27272A;
+    border-radius: 14px;
+    padding: 10px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    z-index: 10;
+}
+
+nav .links.active {
+    display: flex;
 }
 
 nav a {
