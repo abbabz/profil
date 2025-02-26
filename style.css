@@ -67,10 +67,17 @@ nav a {
 nav a:hover {
     color: #ff0077;
 }
-nav .menu-toggle {
-display: none;
-font-size: 24px;
-cursor: pointer;
+.menu-toggle {
+    display: none; /* Caché par défaut */
+    font-size: 24px;
+    cursor: pointer;
+    color: #00ffcc;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Affiché sur mobile */
+    }
 }
 
 /* Conteneur 3D */
