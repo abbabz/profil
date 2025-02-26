@@ -67,6 +67,17 @@ nav a {
 nav a:hover {
     color: #ff0077;
 }
+nav .links {
+display: flex;
+align-items: center;
+gap: 20px;
+
+}
+
+nav .links a {
+font-size: 20px;
+color:gray;
+}
 nav .menu-toggle {
 display: none;
 font-size: 24px;
