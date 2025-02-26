@@ -51,6 +51,11 @@ header h1 {
     color: #00ffcc;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
 nav a {
     text-decoration: none;
@@ -61,32 +66,6 @@ nav a {
 
 nav a:hover {
     color: #ff0077;
-}
-nav .links {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    background: rgba(24, 24, 27, 0.8);
-    border: 1px solid #27272A;
-    border-radius: 14px;
-    padding: 10px;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    z-index: 10;
-}
-
-nav .links.active {
-    display: flex;
-}
-nav .links a {
-font-size: 20px;
-color:gray;
-}
-nav .menu-toggle {
-display: none;
-font-size: 24px;
-cursor: pointer;
 }
 .menu-toggle {
     display: none; /* Caché par défaut */
@@ -370,16 +349,6 @@ body.dark-mode .contact form label {
     nav ul.active {
         display: flex;
     }
-
-    nav .links a {
-        color: #fff;
-        font-size: 18px;
-    }
-
-    .menu-toggle {
-        display: block; /* Affiché sur mobile */
-    }
-}
 
     .about {
         flex-direction: column;
