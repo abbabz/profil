@@ -53,18 +53,17 @@ header h1 {
 
 
 nav .links {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    background: rgba(24, 24, 27, 0.8);
-    border: 1px solid #27272A;
-    border-radius: 14px;
-    padding: 10px;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    z-index: 10;
+    display: flex; /* Affiché par défaut en mode desktop */
+    flex-direction: row; /* Alignement horizontal */
+    gap: 20px;
+    background: transparent; /* Pas de fond en mode desktop */
+    border: none; /* Pas de bordure en mode desktop */
+    border-radius: 0;
+    padding: 0;
+    position: static; /* Position normale */
+    z-index: auto;
 }
+
 
 nav .links.active {
     display: flex;
@@ -87,11 +86,6 @@ nav a:hover {
     color: #00ffcc;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Affiché sur mobile */
-    }
-}
 
 /* Conteneur 3D */
 #three-container {
@@ -345,9 +339,10 @@ body.dark-mode .contact form label {
 
 /* Responsive */
 @media (max-width: 768px) {
+    /* Cacher le menu par défaut en mode mobile */
     nav .links {
         display: none;
-        flex-direction: column;
+        flex-direction: column; /* Alignement vertical */
         gap: 10px;
         background: rgba(24, 24, 27, 0.8);
         border: 1px solid #27272A;
@@ -359,9 +354,16 @@ body.dark-mode .contact form label {
         z-index: 10;
     }
 
+    /* Afficher le menu lorsque la classe .active est ajoutée */
     nav .links.active {
         display: flex;
     }
+
+    /* Afficher le bouton de bascule en mode mobile */
+    .menu-toggle {
+        display: block;
+    }
+}
 
     .about {
         flex-direction: column;
