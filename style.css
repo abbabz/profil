@@ -51,11 +51,6 @@ header h1 {
     color: #00ffcc;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
 
 nav a {
     text-decoration: none;
@@ -68,12 +63,22 @@ nav a:hover {
     color: #ff0077;
 }
 nav .links {
-display: flex;
-align-items: center;
-gap: 20px;
-
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(24, 24, 27, 0.8);
+    border: 1px solid #27272A;
+    border-radius: 14px;
+    padding: 10px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    z-index: 10;
 }
 
+nav .links.active {
+    display: flex;
+}
 nav .links a {
 font-size: 20px;
 color:gray;
@@ -82,6 +87,18 @@ nav .menu-toggle {
 display: none;
 font-size: 24px;
 cursor: pointer;
+}
+.menu-toggle {
+    display: none; /* Caché par défaut */
+    font-size: 24px;
+    cursor: pointer;
+    color: #00ffcc;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Affiché sur mobile */
+    }
 }
 
 /* Conteneur 3D */
@@ -336,23 +353,34 @@ body.dark-mode .contact form label {
 
 /* Responsive */
 @media (max-width: 768px) {
-    nav ul {
-        display: none;
+    nav .links {
+        display: none; /* Caché par défaut */
         flex-direction: column;
         gap: 10px;
-        background: rgba(24, 24, 27, 0.8);
+        background: rgba(24, 24, 27, 0.9);
         border: 1px solid #27272A;
         border-radius: 14px;
-        padding: 10px;
+        padding: 20px;
         position: absolute;
         top: 70px;
         right: 20px;
         z-index: 10;
+        width: 200px; /* Largeur du menu */
     }
 
-    nav ul.active {
-        display: flex;
+    nav .links.active {
+        display: flex; /* Affiché lorsque la classe active est ajoutée */
     }
+
+    nav .links a {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .menu-toggle {
+        display: block; /* Affiché sur mobile */
+    }
+}
 
     .about {
         flex-direction: column;
