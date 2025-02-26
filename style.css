@@ -194,9 +194,9 @@ main {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 colonnes en desktop, 1 en mobile */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    justify-content: center;
+    align-items: stretch; /* Uniformise la hauteur */
 }
 
 .portfolio-item {
@@ -206,14 +206,13 @@ main {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease;
-}
-
-.portfolio-item:hover {
-    transform: scale(1.05);
+    overflow: hidden;
 }
 
 .portfolio-item img {
     width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 14px;
 }
 
@@ -228,8 +227,12 @@ main {
     font-size: 16px;
     margin-top: 5px;
     text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limite le texte à 3 lignes */
+    -webkit-box-orient: vertical;
 }
-
 /* Responsive pour les petits écrans */
 @media (max-width: 768px) {
     .portfolio-grid {
