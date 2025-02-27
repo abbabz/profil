@@ -168,7 +168,7 @@ main {
 /* Section Portfolio */
 .portfolio {
     padding: 60px 42px;
-    background: rgba(24, 24, 27, 0.8);
+    background:  transparent;
     border: 1px solid #27272A;
     border-radius: 14px;
     backdrop-filter: blur(10px);
