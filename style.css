@@ -169,9 +169,10 @@ main {
 .portfolio {
     padding: 60px 42px;
     background:  transparent;
-    border: 1px solid #27272A;
+   /* border: 1px solid #27272A;*/
+    border: 1px solid transparent;
     border-radius: 14px;
-    backdrop-filter: blur(10px);
+  /*  backdrop-filter: blur(10px);*/
     margin-bottom: 20px;
 }
 
