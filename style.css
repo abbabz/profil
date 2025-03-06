@@ -100,10 +100,10 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 60px 42px;
-    background: rgba(24, 24, 27, 0.8);
+    /*background: rgba(24, 24, 27, 0.8);*/
     border: 1px solid #27272A;
     border-radius: 14px;
-    backdrop-filter: blur(10px);
+    /*backdrop-filter: blur(10px);*/
     margin-bottom: 20px;
 }
 
@@ -168,10 +168,10 @@ main {
 /* Section Compétences */
 .skills {
     padding: 60px 42px;
-    background: rgba(24, 24, 27, 0.8);
+  /*  background: rgba(24, 24, 27, 0.8);*/
     border: 1px solid #27272A;
     border-radius: 14px;
-    backdrop-filter: blur(10px);
+   /* backdrop-filter: blur(10px);*/
     margin-bottom: 20px;
 }
 
@@ -226,10 +226,10 @@ main {
 /* Section Portfolio */
 .portfolio {
     padding: 60px 42px;
-    background: rgba(24, 24, 27, 0.8);
+  /*  background: rgba(24, 24, 27, 0.8);*/
     border: 1px solid #27272A;
     border-radius: 14px;
-   backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px);*/
     margin-bottom: 20px;
 }
 
