@@ -391,6 +391,40 @@ main {
     background: #ff0077;
 }
 
+
+/* section cv*/
+
+.cv {
+    padding: 60px 42px;
+    background: rgba(24, 24, 27, 0.8);
+    border: 1px solid #27272A;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cv h3 {
+    color: #BDBDBD;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.cv-button {
+    background: #00ffcc;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.cv-button:hover {
+    background: #ff0077;
+}
+
 /* Pied de page */
 footer {
     display: flex;
