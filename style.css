@@ -222,6 +222,62 @@ main {
     text-align: justify;
 }
 
+/* experience profetionnelle*/
+
+.experience {
+    padding: 60px 42px;
+    /*background: rgba(24, 24, 27, 0.8);*/
+    border: 1px solid #27272A;
+    border-radius: 14px;
+    /*backdrop-filter: blur(10px);*/
+    margin-bottom: 20px;
+}
+
+.experience h3 {
+    color: #BDBDBD;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.experience-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #27272A;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.experience-item h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.experience-item .company {
+    color: #00ffcc;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.experience-item .date {
+    color: #BDBDBD;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style: disc inside;
+    color: #BDBDBD;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
 
 /* Section Portfolio */
 .portfolio {
