@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 3D - Amadou Issaka ILLO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+<header>
+    <h1>Portfolio 3D - Amadou Issaka ILLO</h1>
+    <nav>
+        <ul class="links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences </a></li>
+            <li><a href="#portfolio">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button id="toggle-theme">Mode Nuit</button>
+        </ul>
+        </div>
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+    </nav>
+</header>
+
+<div id="three-container"></div> <!-- Contiendra la scène 3D -->
+
+<main>
+    <section id="about" class="about">
+        <div class="left">
+            <h3>Administrateur Réseaux et Systèmes</h3>
+            <div class="info">
+                <h2>Je suis Amadou Issaka <strong>ILLO</strong></h2>
+                <p>Je crée des solutions réseau et des systèmes robustes.</p>
+                <div class="buttons">
+                    <button class="email">Copier Email <i class="far fa-copy"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="profil.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+    <h3>Compétences</h3>
+    <div class="skills-grid">
+        <div class="skill-item">
+            <i class="fas fa-network-wired"></i>
+            <h4>Réseaux</h4>
+            <p>Conception, configuration et gestion de réseaux informatiques.</p>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-server"></i>
+            <h4>Administration Systèmes</h4>
+            <p>Gestion des serveurs, virtualisation et déploiement de services.</p>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-cloud"></i>
+            <h4>Cloud Computing</h4>
+            <p>Déploiement et gestion d'infrastructures cloud (AWS, Docker, Kubernetes).</p>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-code"></i>
+            <h4>Automatisation</h4>
+            <p>Scripting et automatisation des tâches avec Python, Bash, Terraform.</p>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-shield-alt"></i>
+            <h4>Sécurité</h4>
+            <p>Mise en place de politiques de sécurité et gestion des vulnérabilités.</p>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-tools"></i>
+            <h4>Outils DevOps</h4>
+            <p>Utilisation d'outils comme Git, Jenkins, Ansible pour l'intégration continue.</p>
+        </div>
+    </div>
+</section>
+
+        <section id="experience" class="experience">
+        <h3>Expériences Professionnelles</h3>
+        <div class="experience-grid">
+            <div class="experience-item">
+                <h4>Stagiaire Professionnel Administrateur Systèmes </h4>
+                <p class="company">Insersite : basée en France (Télétravail) </p>
+                <p class="date">Janvier 2025 - Présent</p>
+                <ul>
+                    <li>Mise en œuvre d'une solution cloud hybride sur AWS et Azure, intégrant les infrastructures réseau sur site et cloud pour
+                        améliorer les performances et l'évolutivité. </li>
+                    <li>Étude et mise en place des infrastructures réseaux pour optimiser la connectivité, la sécurité et la gestion des ressources IT.</li>
+                    <li>Mise en place de solutions de sécurité.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h4>Administrateur Réseaux</h4>
+                <p class="company">Établissement Privé</p>
+                <p class="date">Juillet 2023 - Décembre 2024</p>
+                <ul>
+                    <li>Configuré des réseaux et migré des systèmes d'information pour améliorer la connectivité et les performances.</li>
+                    <li>Installer et optimiser les systèmes d'exploitation afin de garantir leur fiabilité et leur efficacité.</li>
+                    <li>Superviser le câblage et l'infrastructure physique en veillant au respect des bonnes pratiques.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h3>Mes Projets</h3>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <a href="https://abbabz.github.io/autoconfigreseau/">
+                    <img src="auto.jpeg" alt="Automatisation config">
+                    <h4>Automatisation des Configurations réseaux </h4>
+                    <p>L'automatisation des configurations réseau via des formulaires permet de définir, déployer et gérer les infrastructures de manière centralisée et cohérente. Cette approche simplifie le déploiement et la mise à jour des configurations tout en garantissant une reproductibilité optimale sur différents environnements, facilitant ainsi l'administration et l'évolution des réseaux à grande échelle.</p>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://abbabz.github.io/terraformaws/">
+                    <img src="tera.jpeg" alt="Terraform AWS">
+                    <h4>Terraform/AWS</h4>
+                    <p>Terraform est un outil d'infrastructure as code (IaC) qui permet aux utilisateurs de définir, déployer et gérer des ressources cloud sur AWS de manière automatisée et reproductible. Il simplifie la gestion des infrastructures en garantissant la cohérence entre les environnements de développement, de test et de production, tout en facilitant les mises à jour et les modifications à grande échelle.</p>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://abbabz.github.io/Docker/">
+                    <img src="projet1.png" alt="Docker">
+                    <h4>Docker</h4>
+                    <p>Docker est une plateforme de conteneurisation qui permet aux développeurs de créer, déployer et exécuter des applications dans des conteneurs légers et portables. Il simplifie la gestion des dépendances et garantit la cohérence entre les environnements de développement, de test et de production.</p>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href=https://abbabz.github.io/kubernetes/>
+                    <img src="projet2.png" alt="Kubernetes">
+                    <h4>Kubernetes</h4>
+                    <p>Kubernetes est une plateforme open-source permettant l'automatisation du déploiement, de la gestion et de la mise à l'échelle d'applications conteneurisées. Il orchestre des clusters de machines virtuelles pour fournir un environnement fiable et performant pour les applications modernes.</p>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://abbabz.github.io/NextCloud/">
+                    <img src="proj3.jpg" alt="Next Cloud">
+                    <h4>NextCloud</h4>
+                    <p>Nextcloud est une solution open-source de stockage et de collaboration en ligne, qui permet aux utilisateurs de synchroniser et partager des fichiers, des calendriers, des contacts et plus encore. Avec Docker Compose, vous pouvez facilement déployer et gérer Nextcloud dans un environnement conteneurisé, offrant ainsi une alternative sécurisée et auto-hébergée aux services de cloud public.</p>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://abbabz.github.io/nextclouddockercompose/">
+                    <img src="proj4.png" alt="Next Cloud Docker-Compose">
+                    <h4>NextCloud avec Docker Compose</h4>
+                    <p>Nextcloud est une solution open-source de stockage et de collaboration en ligne qui permet aux utilisateurs de synchroniser et de partager des fichiers, des calendriers, des contacts et plus encore. Il offre une alternative sécurisée et auto-hébergée aux services de cloud public.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h3>Contactez-moi</h3>
+        <form action="mailto:amadouadmnsys@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    </br>
+    <section id="cv" class="cv">
+    <h3>Télécharger mon CV</h3>
+    <a href="#"  class="cv-button">Télécharger CV (PDF)</a>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2025 - Portfolio 3D - Amadou Issaka ILLO</p>
+    <div class="socials">
+        <a href="#">Github</a>
+        <a href="https://x.com/AmadouIssakail1?t=cB8OmZLlzfAinP1Xf4aRRA&s=09">Twitter</a>
+        <a href="https://www.linkedin.com/in/amadou-issaka-illo-55b1a11ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script  src="script1.js"> </script>
+<script  src="script2.js"></script>
+</body>
+</html>
