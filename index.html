@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio 3D - Amadou Issaka ILLO</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 3D - Amadou Issaka ILLO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="main.js"></script>
 </head>
 <body>
-  <header>
+<header>
     <h1>Portfolio 3D - Amadou Issaka ILLO</h1>
     <nav>
-      <ul class="links">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#portfolio">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="toggle-theme">Mode Nuit</button>
-      <div class="menu-toggle">
+        <ul class="links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences </a></li>
+            <li><a href="#portfolio">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button id="toggle-theme">Mode Nuit</button>
+        </ul>
+        </div>
+    <div class="menu-toggle">
         <i class="fas fa-bars"></i>
-      </div>
+    </div>
     </nav>
-  </header>
+</header>
 
-  <div id="three-container"></div>
+<div id="three-container"></div> <!-- Contiendra la scène 3D -->
 
 <main>
     <section id="about" class="about">
@@ -96,13 +100,11 @@
             <div class="experience-item">
                 <h4>Administrateur Réseaux</h4>
                 <p class="company">Établissement Privé</p>
-                <p class="date">Jan 2023 - Décembre 2024</p>
+                <p class="date">Juillet 2023 - Décembre 2024</p>
                 <ul>
-                    <li>  Mise en place et administration de plateformes de virtualisation basées sur Proxmox et VMware ESXi, afin d’optimiser l’utilisation des ressources et garantir la haute disponibilité des services.</li>
-                    <li>Déployé et configuré une solution VPN WireGuard afin de sécuriser les accès distants aux ressources de 
-l’organisation. </li>
-                    <li> Assuré un support technique aux utilisateurs, contribuant à l'amélioration de leur productivité et à la stabilité des 
-systèmes.</li>
+                    <li>Configuré des réseaux et migré des systèmes d'information pour améliorer la connectivité et les performances.</li>
+                    <li>Installer et optimiser les systèmes d'exploitation afin de garantir leur fiabilité et leur efficacité.</li>
+                    <li>Superviser le câblage et l'infrastructure physique en veillant au respect des bonnes pratiques.</li>
                 </ul>
             </div>
         </div>
@@ -175,21 +177,16 @@ systèmes.</li>
 </section>
 </main>
 
-  <footer>
+<footer>
     <p>&copy; 2025 - Portfolio 3D - Amadou Issaka ILLO</p>
     <div class="socials">
-      <a href="#">Github</a>
-      <a href="https://x.com/AmadouIssakail1?t=cB8OmZLlzfAinP1Xf4aRRA&s=09">Twitter</a>
-      <a href="https://www.linkedin.com/in/amadou-issaka-illo-55b1a11ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+        <a href="#">Github</a>
+        <a href="https://x.com/AmadouIssakail1?t=cB8OmZLlzfAinP1Xf4aRRA&s=09">Twitter</a>
+        <a href="https://www.linkedin.com/in/amadou-issaka-illo-55b1a11ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
     </div>
-  </footer>
-
-  <!-- ✅ Scripts en fin de body, dans l’ordre -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="main.js"></script>
-  <script src="script.js"></script>
-  <script src="script1.js"></script>
-  <script src="script2.js"></script>
+</footer>
+<script src="script.js"></script>
+<script  src="script1.js"> </script>
+<script  src="script2.js"></script>
 </body>
 </html>
